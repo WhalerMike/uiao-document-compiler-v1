@@ -12,31 +12,31 @@
         <meta name="author" content="Michael Stratton">
       
       
-        <link rel="canonical" href="https://whalermike.github.io/uiao-docs/appendix/a-adapter-plane/a-04-adapter-health-liveness/">
+        <link rel="canonical" href="https://whalermike.github.io/uiao-docs/adr/adr-000-adr-process/">
       
       
-        <link rel="prev" href="../a-03-adapter-hot-swap-rollback/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../b-truth-fabric/">
+        <link rel="next" href="../adr-005-canonical-claim-schema/">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Appendix A-04: Adapter Health and Liveness - UIAO Governance Canon</title>
+        <title>ADR-000: ADR Process and Lifecycle - UIAO Governance Canon</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,7 +55,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#appendix-a-04-adapter-health-and-liveness" class="md-skip">
+        <a href="#adr-000-adr-process-and-lifecycle" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="UIAO Governance Canon" class="md-header__button md-logo" aria-label="UIAO Governance Canon" data-md-component="logo">
+    <a href="../.." title="UIAO Governance Canon" class="md-header__button md-logo" aria-label="UIAO Governance Canon" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Appendix A-04: Adapter Health and Liveness
+              ADR-000: ADR Process and Lifecycle
             
           </span>
         </div>
@@ -227,7 +227,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -248,7 +248,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../canon/" class="md-tabs__link">
+        <a href="../../canon/" class="md-tabs__link">
           
   
   
@@ -264,13 +264,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../appendix/a-adapter-plane/" class="md-tabs__link">
           
   
   
@@ -290,7 +288,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../b-truth-fabric/" class="md-tabs__link">
+        <a href="../../appendix/b-truth-fabric/" class="md-tabs__link">
           
   
   
@@ -310,7 +308,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../c-drift-fabric/" class="md-tabs__link">
+        <a href="../../appendix/c-drift-fabric/" class="md-tabs__link">
           
   
   
@@ -330,7 +328,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../d-evidence-fabric/" class="md-tabs__link">
+        <a href="../../appendix/d-evidence-fabric/" class="md-tabs__link">
           
   
   
@@ -350,7 +348,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../e-governance-plane/" class="md-tabs__link">
+        <a href="../../appendix/e-governance-plane/" class="md-tabs__link">
           
   
   
@@ -366,11 +364,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../adr/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -406,7 +406,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="UIAO Governance Canon" class="md-nav__button md-logo" aria-label="UIAO Governance Canon" data-md-component="logo">
+    <a href="../.." title="UIAO Governance Canon" class="md-nav__button md-logo" aria-label="UIAO Governance Canon" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -436,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -517,7 +517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../canon/" class="md-nav__link">
+      <a href="../../canon/" class="md-nav__link">
         
   
   
@@ -545,7 +545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../canon/canonical-rules/" class="md-nav__link">
+      <a href="../../canon/canonical-rules/" class="md-nav__link">
         
   
   
@@ -580,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../canon/glossary/" class="md-nav__link">
+      <a href="../../canon/glossary/" class="md-nav__link">
         
   
   
@@ -615,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../canon/migration-plan/" class="md-nav__link">
+      <a href="../../canon/migration-plan/" class="md-nav__link">
         
   
   
@@ -650,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../canon/pdf-layout-spec/" class="md-nav__link">
+      <a href="../../canon/pdf-layout-spec/" class="md-nav__link">
         
   
   
@@ -685,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../canon/corpus-status-dashboard/" class="md-nav__link">
+      <a href="../../canon/corpus-status-dashboard/" class="md-nav__link">
         
   
   
@@ -724,31 +724,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -766,7 +763,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -784,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../appendix/a-adapter-plane/" class="md-nav__link">
         
   
   
@@ -819,7 +816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../a-01-adapter-lifecycle/" class="md-nav__link">
+      <a href="../../appendix/a-adapter-plane/a-01-adapter-lifecycle/" class="md-nav__link">
         
   
   
@@ -854,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../a-02-adapter-sandbox-execution/" class="md-nav__link">
+      <a href="../../appendix/a-adapter-plane/a-02-adapter-sandbox-execution/" class="md-nav__link">
         
   
   
@@ -889,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../a-03-adapter-hot-swap-rollback/" class="md-nav__link">
+      <a href="../../appendix/a-adapter-plane/a-03-adapter-hot-swap-rollback/" class="md-nav__link">
         
   
   
@@ -921,44 +918,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    A-04 Adapter Health and Liveness
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--DRAFT"></span>
-  
-
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../appendix/a-adapter-plane/a-04-adapter-health-liveness/" class="md-nav__link">
         
   
   
@@ -981,114 +944,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Purpose
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scope" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scope
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#health-vs-liveness" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Health vs. Liveness
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#health-check-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Health Check Protocol
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#liveness-probe-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Liveness Probe Protocol
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#truth-fabric-health-records" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Truth Fabric Health Records
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adapter-self-reporting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adapter Self-Reporting
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dependencies
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1162,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../b-truth-fabric/" class="md-nav__link">
+      <a href="../../appendix/b-truth-fabric/" class="md-nav__link">
         
   
   
@@ -1197,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../b-truth-fabric/b-01-canonical-claim-schema/" class="md-nav__link">
+      <a href="../../appendix/b-truth-fabric/b-01-canonical-claim-schema/" class="md-nav__link">
         
   
   
@@ -1232,7 +1087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../b-truth-fabric/b-02-identity-anchoring/" class="md-nav__link">
+      <a href="../../appendix/b-truth-fabric/b-02-identity-anchoring/" class="md-nav__link">
         
   
   
@@ -1267,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../b-truth-fabric/b-03-multi-cloud-identity-matrix/" class="md-nav__link">
+      <a href="../../appendix/b-truth-fabric/b-03-multi-cloud-identity-matrix/" class="md-nav__link">
         
   
   
@@ -1302,7 +1157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../b-truth-fabric/b-04-control-mapping-governance/" class="md-nav__link">
+      <a href="../../appendix/b-truth-fabric/b-04-control-mapping-governance/" class="md-nav__link">
         
   
   
@@ -1398,7 +1253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../c-drift-fabric/" class="md-nav__link">
+      <a href="../../appendix/c-drift-fabric/" class="md-nav__link">
         
   
   
@@ -1433,7 +1288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../c-drift-fabric/c-01-drift-detection/" class="md-nav__link">
+      <a href="../../appendix/c-drift-fabric/c-01-drift-detection/" class="md-nav__link">
         
   
   
@@ -1468,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../c-drift-fabric/c-02-drift-taxonomy/" class="md-nav__link">
+      <a href="../../appendix/c-drift-fabric/c-02-drift-taxonomy/" class="md-nav__link">
         
   
   
@@ -1503,7 +1358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../c-drift-fabric/c-03-vendor-failure-containment/" class="md-nav__link">
+      <a href="../../appendix/c-drift-fabric/c-03-vendor-failure-containment/" class="md-nav__link">
         
   
   
@@ -1599,7 +1454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../d-evidence-fabric/" class="md-nav__link">
+      <a href="../../appendix/d-evidence-fabric/" class="md-nav__link">
         
   
   
@@ -1634,7 +1489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../d-evidence-fabric/d-01-evidence-determinism/" class="md-nav__link">
+      <a href="../../appendix/d-evidence-fabric/d-01-evidence-determinism/" class="md-nav__link">
         
   
   
@@ -1669,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../d-evidence-fabric/d-02-evidence-lifecycle/" class="md-nav__link">
+      <a href="../../appendix/d-evidence-fabric/d-02-evidence-lifecycle/" class="md-nav__link">
         
   
   
@@ -1704,7 +1559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../d-evidence-fabric/d-03-evidence-signing/" class="md-nav__link">
+      <a href="../../appendix/d-evidence-fabric/d-03-evidence-signing/" class="md-nav__link">
         
   
   
@@ -1739,7 +1594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../d-evidence-fabric/d-04-evidence-correlation/" class="md-nav__link">
+      <a href="../../appendix/d-evidence-fabric/d-04-evidence-correlation/" class="md-nav__link">
         
   
   
@@ -1835,7 +1690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-governance-plane/" class="md-nav__link">
+      <a href="../../appendix/e-governance-plane/" class="md-nav__link">
         
   
   
@@ -1870,7 +1725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-governance-plane/e-01-arb-coordination/" class="md-nav__link">
+      <a href="../../appendix/e-governance-plane/e-01-arb-coordination/" class="md-nav__link">
         
   
   
@@ -1905,7 +1760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-governance-plane/e-02-mission-partner-corridors/" class="md-nav__link">
+      <a href="../../appendix/e-governance-plane/e-02-mission-partner-corridors/" class="md-nav__link">
         
   
   
@@ -1940,7 +1795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../e-governance-plane/e-03-cross-fabric-consistency/" class="md-nav__link">
+      <a href="../../appendix/e-governance-plane/e-03-cross-fabric-consistency/" class="md-nav__link">
         
   
   
@@ -1979,28 +1834,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   
@@ -2018,7 +1876,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2036,7 +1894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -2061,10 +1919,44 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../adr/adr-000-adr-process/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-000 ADR Process
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2087,6 +1979,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adr-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ADR Lifecycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numbering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numbering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-frontmatter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required Frontmatter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required Sections
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consequences
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See Also
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2099,7 +2116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-005-canonical-claim-schema/" class="md-nav__link">
+      <a href="../adr-005-canonical-claim-schema/" class="md-nav__link">
         
   
   
@@ -2134,7 +2151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-006-evidence-determinism/" class="md-nav__link">
+      <a href="../adr-006-evidence-determinism/" class="md-nav__link">
         
   
   
@@ -2169,7 +2186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-007-multi-cloud-adapter/" class="md-nav__link">
+      <a href="../adr-007-multi-cloud-adapter/" class="md-nav__link">
         
   
   
@@ -2204,7 +2221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-008-zero-trust-identity/" class="md-nav__link">
+      <a href="../adr-008-zero-trust-identity/" class="md-nav__link">
         
   
   
@@ -2239,7 +2256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-009-drift-ledger-immutability/" class="md-nav__link">
+      <a href="../adr-009-drift-ledger-immutability/" class="md-nav__link">
         
   
   
@@ -2274,7 +2291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-010-vendor-baseline-versioning/" class="md-nav__link">
+      <a href="../adr-010-vendor-baseline-versioning/" class="md-nav__link">
         
   
   
@@ -2309,7 +2326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-011-multi-adapter-correlation/" class="md-nav__link">
+      <a href="../adr-011-multi-adapter-correlation/" class="md-nav__link">
         
   
   
@@ -2344,7 +2361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-012-canonical-drift-taxonomy/" class="md-nav__link">
+      <a href="../adr-012-canonical-drift-taxonomy/" class="md-nav__link">
         
   
   
@@ -2379,7 +2396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-013-adapter-failure-isolation/" class="md-nav__link">
+      <a href="../adr-013-adapter-failure-isolation/" class="md-nav__link">
         
   
   
@@ -2414,7 +2431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-014-evidence-severity-model/" class="md-nav__link">
+      <a href="../adr-014-evidence-severity-model/" class="md-nav__link">
         
   
   
@@ -2449,7 +2466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-015-adapter-extensibility/" class="md-nav__link">
+      <a href="../adr-015-adapter-extensibility/" class="md-nav__link">
         
   
   
@@ -2484,7 +2501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-016-evidence-bundle-lifecycle/" class="md-nav__link">
+      <a href="../adr-016-evidence-bundle-lifecycle/" class="md-nav__link">
         
   
   
@@ -2519,7 +2536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-017-adapter-sandbox-execution/" class="md-nav__link">
+      <a href="../adr-017-adapter-sandbox-execution/" class="md-nav__link">
         
   
   
@@ -2554,7 +2571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-018-mission-channel-enforcement/" class="md-nav__link">
+      <a href="../adr-018-mission-channel-enforcement/" class="md-nav__link">
         
   
   
@@ -2589,7 +2606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-019-vendor-failure-containment/" class="md-nav__link">
+      <a href="../adr-019-vendor-failure-containment/" class="md-nav__link">
         
   
   
@@ -2624,7 +2641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-020-evidence-correlation-determinism/" class="md-nav__link">
+      <a href="../adr-020-evidence-correlation-determinism/" class="md-nav__link">
         
   
   
@@ -2659,7 +2676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-021-adapter-hot-swap-rollback/" class="md-nav__link">
+      <a href="../adr-021-adapter-hot-swap-rollback/" class="md-nav__link">
         
   
   
@@ -2694,7 +2711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-022-evidence-compression/" class="md-nav__link">
+      <a href="../adr-022-evidence-compression/" class="md-nav__link">
         
   
   
@@ -2729,7 +2746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-023-adapter-concurrency/" class="md-nav__link">
+      <a href="../adr-023-adapter-concurrency/" class="md-nav__link">
         
   
   
@@ -2764,7 +2781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-024-evidence-diffing/" class="md-nav__link">
+      <a href="../adr-024-evidence-diffing/" class="md-nav__link">
         
   
   
@@ -2799,7 +2816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-025-adapter-health-liveness/" class="md-nav__link">
+      <a href="../adr-025-adapter-health-liveness/" class="md-nav__link">
         
   
   
@@ -2834,7 +2851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-026-evidence-lifecycle-guarantees/" class="md-nav__link">
+      <a href="../adr-026-evidence-lifecycle-guarantees/" class="md-nav__link">
         
   
   
@@ -2869,7 +2886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../adr/adr-027-adapter-retirement/" class="md-nav__link">
+      <a href="../adr-027-adapter-retirement/" class="md-nav__link">
         
   
   
@@ -2924,72 +2941,89 @@
   
 
 
-<h1 id="appendix-a-04-adapter-health-and-liveness">Appendix A-04: Adapter Health and Liveness<a class="headerlink" href="#appendix-a-04-adapter-health-and-liveness" title="Permanent link">&para;</a></h1>
-<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p>This appendix defines the health and liveness monitoring requirements for UIAO adapters. Health monitoring detects degraded adapters before they cause failures. Liveness probing detects adapters that have hung or crashed and triggers automatic recovery.</p>
-<h2 id="scope">Scope<a class="headerlink" href="#scope" title="Permanent link">&para;</a></h2>
-<p>Applies to all adapters in ACTIVE state. Adapters in REGISTERED state are subject to health checks during sandbox validation only.</p>
-<h2 id="health-vs-liveness">Health vs. Liveness<a class="headerlink" href="#health-vs-liveness" title="Permanent link">&para;</a></h2>
-<p><strong>Health</strong> refers to the adapter's ability to process requests correctly. An unhealthy adapter is running but producing incorrect, slow, or incomplete outputs.</p>
-<p><strong>Liveness</strong> refers to whether the adapter process is alive and responsive at all. An unlive adapter has crashed, hung, or stopped responding to its management interface.</p>
-<h2 id="health-check-protocol">Health Check Protocol<a class="headerlink" href="#health-check-protocol" title="Permanent link">&para;</a></h2>
-<p>Each adapter MUST expose a health endpoint at the path configured in its registration schema. The Adapter Plane polls this endpoint on a configurable interval (default: 30 seconds).</p>
-<p>A health check response MUST include:
-- <code>status</code>: "healthy" | "degraded" | "unhealthy"
-- <code>latency_p99_ms</code>: 99th percentile request latency in milliseconds
-- <code>error_rate_pct</code>: Percentage of requests resulting in errors over the last 5 minutes
-- <code>queue_depth</code>: Number of requests currently queued</p>
-<p><strong>Thresholds for automatic lifecycle action:</strong></p>
+<h1 id="adr-000-adr-process-and-lifecycle">ADR-000: ADR Process and Lifecycle<a class="headerlink" href="#adr-000-adr-process-and-lifecycle" title="Permanent link">&para;</a></h1>
+<h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h2>
+<p>ACCEPTED</p>
+<h2 id="context">Context<a class="headerlink" href="#context" title="Permanent link">&para;</a></h2>
+<p>The UIAO governance corpus requires a consistent, auditable process for recording
+architectural decisions. Without a defined process, decisions are made informally,
+are hard to trace, and cannot be challenged or superseded in a principled way.</p>
+<p>This ADR establishes the ADR lifecycle itself -- the meta-process that all other
+ADRs follow.</p>
+<h2 id="decision">Decision<a class="headerlink" href="#decision" title="Permanent link">&para;</a></h2>
+<p>All significant architectural decisions that affect UIAO core behavior, adapter
+contracts, evidence standards, or governance policy MUST be recorded as ADRs
+in <code>docs/adr/</code> using the filename pattern <code>adr-NNN-short-title.md</code>.</p>
+<h3 id="adr-lifecycle">ADR Lifecycle<a class="headerlink" href="#adr-lifecycle" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>PROPOSED --&gt; ACCEPTED --&gt; SUPERSEDED
+                      --&gt; DEPRECATED
+</code></pre></div>
 <table>
 <thead>
 <tr>
-<th>Condition</th>
-<th>Action</th>
+<th>Status</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>status: degraded</code> for 3 consecutive checks</td>
-<td>Evidence Fabric WARN event; Governance Plane notification</td>
+<td>PROPOSED</td>
+<td>Draft ADR under review. Not yet binding.</td>
 </tr>
 <tr>
-<td><code>status: unhealthy</code> for 2 consecutive checks</td>
-<td>ACTIVE → SUSPENDED transition</td>
+<td>ACCEPTED</td>
+<td>Ratified by Governance Board. Binding on all new work.</td>
 </tr>
 <tr>
-<td><code>error_rate_pct &gt; 10</code> for 5 minutes</td>
-<td>Evidence Fabric WARN event</td>
+<td>SUPERSEDED</td>
+<td>Replaced by a newer ADR. Link to successor required.</td>
 </tr>
 <tr>
-<td><code>error_rate_pct &gt; 25</code> for 2 minutes</td>
-<td>ACTIVE → SUSPENDED transition</td>
-</tr>
-<tr>
-<td><code>latency_p99_ms &gt; 5000</code> for 3 consecutive checks</td>
-<td>Evidence Fabric WARN event</td>
+<td>DEPRECATED</td>
+<td>No longer applicable. May reference archived context.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="liveness-probe-protocol">Liveness Probe Protocol<a class="headerlink" href="#liveness-probe-protocol" title="Permanent link">&para;</a></h2>
-<p>The Adapter Plane sends a liveness ping to each ACTIVE adapter every 10 seconds. If an adapter fails to respond within 5 seconds, the ping is retried once. If the retry also fails, the adapter is classified as UNLIVE and the following sequence is triggered:</p>
-<ol>
-<li>ACTIVE → SUSPENDED lifecycle transition</li>
-<li>Evidence Fabric CRITICAL audit event</li>
-<li>Governance Plane notification</li>
-<li>Adapter process restart attempt (configurable: enabled/disabled per adapter)</li>
-<li>If restart succeeds: health check validation before re-promoting to ACTIVE</li>
-<li>If restart fails: adapter remains SUSPENDED pending manual investigation</li>
-</ol>
-<h2 id="truth-fabric-health-records">Truth Fabric Health Records<a class="headerlink" href="#truth-fabric-health-records" title="Permanent link">&para;</a></h2>
-<p>All health check results are written to the Truth Fabric as part of the adapter's canonical state record. The Truth Fabric retains the last 100 health check results per adapter. Older results are archived to the Evidence Fabric.</p>
-<h2 id="adapter-self-reporting">Adapter Self-Reporting<a class="headerlink" href="#adapter-self-reporting" title="Permanent link">&para;</a></h2>
-<p>Adapters MAY proactively report their own health status to the Adapter Plane management interface without waiting for a poll. Self-reported status overrides the previous polled status until the next scheduled poll. This enables adapters to report degradation immediately on detection rather than waiting for the next poll interval.</p>
-<h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h2>
+<h3 id="numbering">Numbering<a class="headerlink" href="#numbering" title="Permanent link">&para;</a></h3>
+<p>ADRs are numbered sequentially from 000. ADR-000 is reserved for this
+process document. ADR-001 through ADR-004 are reserved for foundational
+adapter plane decisions (to be ratified). ADR-005 onwards are assigned
+in merge order.</p>
+<h3 id="required-frontmatter">Required Frontmatter<a class="headerlink" href="#required-frontmatter" title="Permanent link">&para;</a></h3>
+<p>Every ADR file MUST include:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">uiao_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UIAO_ADR_NNN</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ADR-NNN:</span><span class="nv"> </span><span class="s">Short</span><span class="nv"> </span><span class="s">Title&quot;</span>
+<span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PROPOSED | ACCEPTED | SUPERSEDED | DEPRECATED</span>
+<span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;team or individual&gt;</span>
+<span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">YYYY-MM-DD</span>
+<span class="nn">---</span>
+</code></pre></div>
+<h3 id="required-sections">Required Sections<a class="headerlink" href="#required-sections" title="Permanent link">&para;</a></h3>
+<p>Every ADR MUST include:</p>
 <ul>
-<li><strong>Truth Fabric (Appendix B):</strong> Stores health check results in adapter state records</li>
-<li><strong>Drift Fabric (Appendix C):</strong> Correlates health degradation with drift events</li>
-<li><strong>Evidence Fabric (Appendix D):</strong> Archives health audit events</li>
-<li><strong>ADR-025:</strong> Health and liveness decision record</li>
+<li><strong>Status</strong> -- current lifecycle state</li>
+<li><strong>Context</strong> -- the problem, constraints, and forces at play</li>
+<li><strong>Decision</strong> -- what was decided and why</li>
+<li><strong>Consequences</strong> -- what becomes easier, harder, or required as a result</li>
+</ul>
+<p>Optional: <strong>Superseded By</strong> (link to successor ADR when status = SUPERSEDED)</p>
+<h2 id="consequences">Consequences<a class="headerlink" href="#consequences" title="Permanent link">&para;</a></h2>
+<ul>
+<li>All 23 existing ADRs (ADR-005 through ADR-027) are retroactively subject
+  to this process.</li>
+<li>New ADRs require Governance Board ratification before status advances
+  from PROPOSED to ACCEPTED.</li>
+<li>ADRs in SUPERSEDED or DEPRECATED state remain in the corpus permanently
+  for audit trail purposes.</li>
+<li>The CI validation workflow (<code>validate-uiao-frontmatter.yml</code>) enforces
+  required frontmatter fields on all ADR files.</li>
+</ul>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../">ADR Index</a></li>
+<li><a href="../../canon/corpus-status-dashboard/">Corpus Status Dashboard</a></li>
+<li><a href="../../canon/canonical-rules/">Canonical Rules</a></li>
 </ul>
 
 
@@ -3060,10 +3094,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
