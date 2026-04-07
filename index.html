@@ -526,6 +526,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#governance-canon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Governance Canon
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -608,13 +619,6 @@
     
   </span>
   
-  
-    
-  
-  
-    <span class="md-status md-status--ACTIVE"></span>
-  
-
   
 
       </a>
@@ -755,6 +759,34 @@
     <span class="md-status md-status--ACTIVE"></span>
   
 
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="canon/corpus-status-dashboard.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corpus Status Dashboard
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1948,19 +1980,40 @@
   <span class="md-ellipsis">
     
   
-    Architectural Decision Records
+    Architectural Decision Records (ADRs)
   
 
     
   </span>
   
   
-    
-  
-  
-    <span class="md-status md-status--ACTIVE"></span>
+
+      </a>
+    </li>
   
 
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="adr/adr-000-adr-process.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-000 ADR Process
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -2803,6 +2856,11 @@
 
 <h1 id="uiao-documentation-site">UIAO Documentation Site<a class="headerlink" href="#uiao-documentation-site" title="Permanent link">&para;</a></h1>
 <p>Welcome to the Unified Integration Architecture Operations (UIAO) documentation portal.</p>
+<div class="admonition tip">
+<p class="admonition-title">Start Here -- Canon Overview</p>
+<p>New to UIAO? Start with the <strong><a href="canon/">Canon Overview</a></strong> -- the authoritative entry point
+for the entire governance corpus. It explains the structure, authority model, and how everything connects.</p>
+</div>
 <h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2813,8 +2871,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="canon/">Canon Overview</a></td>
+<td><strong>Start here</strong> -- governance structure and authority model</td>
+</tr>
+<tr>
+<td><a href="canon/corpus-status-dashboard.md">Corpus Status Dashboard</a></td>
+<td>Document maturity and governance health at a glance</td>
+</tr>
+<tr>
 <td><a href="documents/">Document Library</a></td>
 <td>Browse all UIAO documents with status badges</td>
+</tr>
+<tr>
+<td><a href="adr/">ADR Index</a></td>
+<td>Architecture decisions by theme and lifecycle state</td>
 </tr>
 <tr>
 <td><a href="contributing/">Contributor Guide</a></td>
@@ -2827,14 +2897,54 @@
 </tbody>
 </table>
 <h2 id="operating-environment">Operating Environment<a class="headerlink" href="#operating-environment" title="Permanent link">&para;</a></h2>
-<p>This site is built with <a href="https://squidfunk.github.io/mkdocs-material/">MkDocs Material</a> and deployed via GitHub Pages from the <a href="https://github.com/WhalerMike/uiao-docs">uiao-docs</a> repository.</p>
+<p>This site is built with MkDocs Material and deployed via GitHub Pages from the
+<a href="https://github.com/WhalerMike/uiao-docs">uiao-docs repository</a>.</p>
 <h2 id="site-conventions">Site Conventions<a class="headerlink" href="#site-conventions" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Document Identifiers</strong> follow the <code>UIAO-xxx</code> pattern</li>
-<li><strong>Status Badges</strong> indicate document maturity: Current, Needs Replacing, Needs Creating</li>
-<li><strong>Download Buttons</strong> appear at the top of every content page</li>
+<li><strong>Document Identifiers</strong> follow the <code>UIAO_&lt;AppendixLetter&gt;_&lt;NN&gt;</code> pattern (e.g., <code>UIAO_A_01</code>)</li>
+<li><strong>Status Badges</strong> indicate document maturity: Current, Draft, Needs Replacing, Needs Creating, Deprecated</li>
+<li><strong>ADR lifecycle:</strong> PROPOSED -&gt; ACCEPTED -&gt; SUPERSEDED | DEPRECATED</li>
 <li><strong>Dark Mode</strong> is available via the toggle in the header</li>
+<li><strong>Search</strong> covers all content including ADRs, appendices, and canon documents</li>
 </ul>
+<h2 id="governance-canon">Governance Canon<a class="headerlink" href="#governance-canon" title="Permanent link">&para;</a></h2>
+<p>The Canon is organized into five appendices plus the canonical rules, glossary, and ADR corpus:</p>
+<table>
+<thead>
+<tr>
+<th>Appendix</th>
+<th>Domain</th>
+<th>Key Topics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="appendix/a-adapter-plane/">A -- Adapter Plane</a></td>
+<td>Integration adapters</td>
+<td>Lifecycle, sandbox, hot-swap, health</td>
+</tr>
+<tr>
+<td><a href="appendix/b-truth-fabric/">B -- Truth Fabric</a></td>
+<td>Canonical state</td>
+<td>Claim schema, identity anchoring, multi-cloud</td>
+</tr>
+<tr>
+<td><a href="appendix/c-drift-fabric/">C -- Drift Fabric</a></td>
+<td>Drift detection</td>
+<td>Detection algorithm, taxonomy, containment</td>
+</tr>
+<tr>
+<td><a href="appendix/d-evidence-fabric/">D -- Evidence Fabric</a></td>
+<td>Audit and compliance</td>
+<td>Determinism, lifecycle, signing, correlation</td>
+</tr>
+<tr>
+<td><a href="appendix/e-governance-plane/">E -- Governance Plane</a></td>
+<td>Governance process</td>
+<td>ARB, mission corridors, cross-fabric consistency</td>
+</tr>
+</tbody>
+</table>
 
 
 

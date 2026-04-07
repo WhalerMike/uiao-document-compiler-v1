@@ -29,7 +29,7 @@
     
     
       
-        <title>Architectural Decision Records - UIAO Governance Canon</title>
+        <title>Architectural Decision Records (ADRs) - UIAO Governance Canon</title>
       
     
     
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Architectural Decision Records
+              Architectural Decision Records (ADRs)
             
           </span>
         </div>
@@ -531,13 +531,6 @@
   </span>
   
   
-    
-  
-  
-    <span class="md-status md-status--ACTIVE"></span>
-  
-
-  
 
       </a>
     </li>
@@ -677,6 +670,34 @@
     <span class="md-status md-status--ACTIVE"></span>
   
 
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../canon/corpus-status-dashboard.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corpus Status Dashboard
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1882,19 +1903,12 @@
   <span class="md-ellipsis">
     
   
-    Architectural Decision Records
+    Architectural Decision Records (ADRs)
   
 
     
   </span>
   
-  
-    
-  
-  
-    <span class="md-status md-status--ACTIVE"></span>
-  
-
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1907,19 +1921,12 @@
   <span class="md-ellipsis">
     
   
-    Architectural Decision Records
+    Architectural Decision Records (ADRs)
   
 
     
   </span>
   
-  
-    
-  
-  
-    <span class="md-status md-status--ACTIVE"></span>
-  
-
   
 
       </a>
@@ -1951,13 +1958,74 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adr-index" class="md-nav__link">
+  <a href="#adr-000-process-and-lifecycle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ADR Index
+        ADR-000: Process and Lifecycle
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adrs-by-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ADRs by Theme
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ADRs by Theme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adapter-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adapter Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identity-and-truth-fabric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identity and Truth Fabric
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drift-fabric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drift Fabric
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evidence-fabric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidence Fabric
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1976,6 +2044,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="adr-000-adr-process.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-000 ADR Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2814,7 +2910,9 @@
 
 
 <h1 id="architectural-decision-records-adrs">Architectural Decision Records (ADRs)<a class="headerlink" href="#architectural-decision-records-adrs" title="Permanent link">&para;</a></h1>
-<p>This index lists all UIAO Architectural Decision Records. ADRs document significant architectural decisions — the context that drove them, the decision made, and the consequences of that decision. Per CR-003, accepted ADRs are immutable.</p>
+<p>This index lists all UIAO Architectural Decision Records.
+ADRs document significant architectural decisions -- the context that drove them, the decision made, and the consequences of that decision.</p>
+<p>Per CR-003, accepted ADRs are immutable.</p>
 <h2 id="adr-status-definitions">ADR Status Definitions<a class="headerlink" href="#adr-status-definitions" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2830,7 +2928,7 @@
 </tr>
 <tr>
 <td>ACCEPTED</td>
-<td>Approved by Governance Board — immutable Decision field</td>
+<td>Approved by Governance Board -- immutable Decision field</td>
 </tr>
 <tr>
 <td>DEPRECATED</td>
@@ -2838,11 +2936,92 @@
 </tr>
 <tr>
 <td>SUPERSEDED</td>
-<td>Replaced by a specific ADR (see superseded_by field)</td>
+<td>Replaced by a specific ADR (see <code>superseded_by</code> field)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="adr-index">ADR Index<a class="headerlink" href="#adr-index" title="Permanent link">&para;</a></h2>
+<h2 id="adr-000-process-and-lifecycle">ADR-000: Process and Lifecycle<a class="headerlink" href="#adr-000-process-and-lifecycle" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ADR</th>
+<th>Title</th>
+<th>Status</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="adr-000-adr-process.md">ADR-000</a></td>
+<td>ADR Process and Lifecycle</td>
+<td>ACCEPTED</td>
+<td>2026-04-07</td>
+</tr>
+</tbody>
+</table>
+<h2 id="adrs-by-theme">ADRs by Theme<a class="headerlink" href="#adrs-by-theme" title="Permanent link">&para;</a></h2>
+<h3 id="adapter-model">Adapter Model<a class="headerlink" href="#adapter-model" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ADR</th>
+<th>Title</th>
+<th>Status</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="adr-007-multi-cloud-adapter/">ADR-007</a></td>
+<td>Multi-Cloud Adapter Model</td>
+<td>ACCEPTED</td>
+<td>2026-01-20</td>
+</tr>
+<tr>
+<td><a href="adr-013-adapter-failure-isolation/">ADR-013</a></td>
+<td>Adapter Failure Isolation</td>
+<td>ACCEPTED</td>
+<td>2026-02-03</td>
+</tr>
+<tr>
+<td><a href="adr-015-adapter-extensibility/">ADR-015</a></td>
+<td>Adapter Extensibility</td>
+<td>ACCEPTED</td>
+<td>2026-02-08</td>
+</tr>
+<tr>
+<td><a href="adr-017-adapter-sandbox-execution/">ADR-017</a></td>
+<td>Adapter Sandbox Execution</td>
+<td>ACCEPTED</td>
+<td>2026-02-12</td>
+</tr>
+<tr>
+<td><a href="adr-021-adapter-hot-swap-rollback/">ADR-021</a></td>
+<td>Adapter Hot-Swap and Rollback</td>
+<td>ACCEPTED</td>
+<td>2026-02-22</td>
+</tr>
+<tr>
+<td><a href="adr-023-adapter-concurrency/">ADR-023</a></td>
+<td>Adapter Concurrency</td>
+<td>ACCEPTED</td>
+<td>2026-03-01</td>
+</tr>
+<tr>
+<td><a href="adr-025-adapter-health-liveness/">ADR-025</a></td>
+<td>Adapter Health and Liveness</td>
+<td>ACCEPTED</td>
+<td>2026-03-05</td>
+</tr>
+<tr>
+<td><a href="adr-027-adapter-retirement/">ADR-027</a></td>
+<td>Adapter Retirement</td>
+<td>ACCEPTED</td>
+<td>2026-03-10</td>
+</tr>
+</tbody>
+</table>
+<h3 id="identity-and-truth-fabric">Identity and Truth Fabric<a class="headerlink" href="#identity-and-truth-fabric" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -2860,26 +3039,8 @@
 <td>2026-01-15</td>
 </tr>
 <tr>
-<td><a href="adr-006-evidence-determinism/">ADR-006</a></td>
-<td>Evidence Determinism</td>
-<td>ACCEPTED</td>
-<td>2026-01-15</td>
-</tr>
-<tr>
-<td><a href="adr-007-multi-cloud-adapter/">ADR-007</a></td>
-<td>Multi-Cloud Adapter Model</td>
-<td>ACCEPTED</td>
-<td>2026-01-20</td>
-</tr>
-<tr>
 <td><a href="adr-008-zero-trust-identity/">ADR-008</a></td>
 <td>Zero-Trust Identity Anchoring</td>
-<td>ACCEPTED</td>
-<td>2026-01-22</td>
-</tr>
-<tr>
-<td><a href="adr-009-drift-ledger-immutability/">ADR-009</a></td>
-<td>Drift Ledger Immutability</td>
 <td>ACCEPTED</td>
 <td>2026-01-22</td>
 </tr>
@@ -2896,16 +3057,60 @@
 <td>2026-01-28</td>
 </tr>
 <tr>
+<td><a href="adr-018-mission-channel-enforcement/">ADR-018</a></td>
+<td>Mission Channel Enforcement</td>
+<td>ACCEPTED</td>
+<td>2026-02-15</td>
+</tr>
+</tbody>
+</table>
+<h3 id="drift-fabric">Drift Fabric<a class="headerlink" href="#drift-fabric" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ADR</th>
+<th>Title</th>
+<th>Status</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="adr-009-drift-ledger-immutability/">ADR-009</a></td>
+<td>Drift Ledger Immutability</td>
+<td>ACCEPTED</td>
+<td>2026-01-22</td>
+</tr>
+<tr>
 <td><a href="adr-012-canonical-drift-taxonomy/">ADR-012</a></td>
 <td>Canonical Drift Taxonomy</td>
 <td>ACCEPTED</td>
 <td>2026-02-01</td>
 </tr>
 <tr>
-<td><a href="adr-013-adapter-failure-isolation/">ADR-013</a></td>
-<td>Adapter Failure Isolation</td>
+<td><a href="adr-019-vendor-failure-containment/">ADR-019</a></td>
+<td>Vendor Failure Containment</td>
 <td>ACCEPTED</td>
-<td>2026-02-03</td>
+<td>2026-02-18</td>
+</tr>
+</tbody>
+</table>
+<h3 id="evidence-fabric">Evidence Fabric<a class="headerlink" href="#evidence-fabric" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ADR</th>
+<th>Title</th>
+<th>Status</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="adr-006-evidence-determinism/">ADR-006</a></td>
+<td>Evidence Determinism</td>
+<td>ACCEPTED</td>
+<td>2026-01-15</td>
 </tr>
 <tr>
 <td><a href="adr-014-evidence-severity-model/">ADR-014</a></td>
@@ -2914,34 +3119,10 @@
 <td>2026-02-05</td>
 </tr>
 <tr>
-<td><a href="adr-015-adapter-extensibility/">ADR-015</a></td>
-<td>Adapter Extensibility</td>
-<td>ACCEPTED</td>
-<td>2026-02-08</td>
-</tr>
-<tr>
 <td><a href="adr-016-evidence-bundle-lifecycle/">ADR-016</a></td>
 <td>Evidence Bundle Lifecycle</td>
 <td>ACCEPTED</td>
 <td>2026-02-10</td>
-</tr>
-<tr>
-<td><a href="adr-017-adapter-sandbox-execution/">ADR-017</a></td>
-<td>Adapter Sandbox Execution</td>
-<td>ACCEPTED</td>
-<td>2026-02-12</td>
-</tr>
-<tr>
-<td><a href="adr-018-mission-channel-enforcement/">ADR-018</a></td>
-<td>Mission Channel Enforcement</td>
-<td>ACCEPTED</td>
-<td>2026-02-15</td>
-</tr>
-<tr>
-<td><a href="adr-019-vendor-failure-containment/">ADR-019</a></td>
-<td>Vendor Failure Containment</td>
-<td>ACCEPTED</td>
-<td>2026-02-18</td>
 </tr>
 <tr>
 <td><a href="adr-020-evidence-correlation-determinism/">ADR-020</a></td>
@@ -2950,22 +3131,10 @@
 <td>2026-02-20</td>
 </tr>
 <tr>
-<td><a href="adr-021-adapter-hot-swap-rollback/">ADR-021</a></td>
-<td>Adapter Hot-Swap and Rollback</td>
-<td>ACCEPTED</td>
-<td>2026-02-22</td>
-</tr>
-<tr>
 <td><a href="adr-022-evidence-compression/">ADR-022</a></td>
 <td>Evidence Compression</td>
 <td>ACCEPTED</td>
 <td>2026-02-25</td>
-</tr>
-<tr>
-<td><a href="adr-023-adapter-concurrency/">ADR-023</a></td>
-<td>Adapter Concurrency</td>
-<td>ACCEPTED</td>
-<td>2026-03-01</td>
 </tr>
 <tr>
 <td><a href="adr-024-evidence-diffing/">ADR-024</a></td>
@@ -2974,41 +3143,28 @@
 <td>2026-03-03</td>
 </tr>
 <tr>
-<td><a href="adr-025-adapter-health-liveness/">ADR-025</a></td>
-<td>Adapter Health and Liveness</td>
-<td>ACCEPTED</td>
-<td>2026-03-05</td>
-</tr>
-<tr>
 <td><a href="adr-026-evidence-lifecycle-guarantees/">ADR-026</a></td>
 <td>Evidence Lifecycle Guarantees</td>
 <td>ACCEPTED</td>
 <td>2026-03-08</td>
 </tr>
-<tr>
-<td><a href="adr-027-adapter-retirement/">ADR-027</a></td>
-<td>Adapter Retirement</td>
-<td>ACCEPTED</td>
-<td>2026-03-10</td>
-</tr>
 </tbody>
 </table>
 <h2 id="adr-governance-rules">ADR Governance Rules<a class="headerlink" href="#adr-governance-rules" title="Permanent link">&para;</a></h2>
-<p>Per <strong>CR-003 (ADR Immutability)</strong>, once an ADR is ACCEPTED:
-- The <strong>Context</strong>, <strong>Decision</strong>, and <strong>Date</strong> fields are immutable
-- Amendments require a new superseding ADR
-- The superseding ADR must include <code>supersedes: ADR-NNN</code>
-- The superseded ADR must be updated with <code>superseded_by: ADR-MMM</code></p>
-<p>All ADR changes require Governance Plane approval.</p>
+<p>Per CR-003 (ADR Immutability), once an ADR is ACCEPTED:</p>
+<ul>
+<li>The Context, Decision, and Date fields are immutable</li>
+<li>Amendments require a new superseding ADR</li>
+<li>The superseding ADR must include <code>supersedes: ADR-NNN</code></li>
+<li>The superseded ADR must be updated with <code>superseded_by: ADR-MMM</code></li>
+</ul>
+<p>All ADR changes require Governance Plane approval. See <a href="adr-000-adr-process.md">ADR-000</a> for the full process.</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
