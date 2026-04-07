@@ -13,6 +13,10 @@
          <lastmod>2026-04-07</lastmod>
     </url>
     <url>
+         <loc>https://whalermike.github.io/uiao-docs/access/</loc>
+         <lastmod>2026-04-07</lastmod>
+    </url>
+    <url>
          <loc>https://whalermike.github.io/uiao-docs/contributing/</loc>
          <lastmod>2026-04-07</lastmod>
     </url>
@@ -266,6 +270,10 @@
     </url>
     <url>
          <loc>https://whalermike.github.io/uiao-docs/documents/</loc>
+         <lastmod>2026-04-07</lastmod>
+    </url>
+    <url>
+         <loc>https://whalermike.github.io/uiao-docs/meta/adr-metadata-contract/</loc>
          <lastmod>2026-04-07</lastmod>
     </url>
     <url>

@@ -55,6 +55,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/uiao.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -90,6 +92,7 @@
     </div>
     
     
+
       
 
 <header class="md-header" data-md-component="header">
@@ -211,6 +214,19 @@
   
 </header>
     
+<div class="uiao-banner">
+  <div class="uiao-banner__left">
+    <span class="uiao-banner__label">UIAO Canon</span>
+    <a href="../../..canon/" class="uiao-banner__link">Start Here</a>
+  </div>
+  <div class="uiao-banner__right">
+    <span class="uiao-banner__status uiao-banner__status--green">Corpus Healthy</span>
+    <a href="../../..canon/corpus-status-dashboard/" class="uiao-banner__link">Corpus Status</a>
+    <a href="../../..adr/" class="uiao-banner__link">ADR Index</a>
+    <a href="../../..access/" class="uiao-banner__link">Access &amp; Downloads</a>
+  </div>
+</div>
+
     <div class="md-container" data-md-component="container">
       
       
@@ -375,6 +391,26 @@
   
   
   Architecture Decision Records
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../access/" class="md-tabs__link">
+          
+  
+  
+  Governance
 
         </a>
       </li>
@@ -2893,6 +2929,137 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Access and Downloads
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Current"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../meta/adr-metadata-contract/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR Metadata Contract
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Current"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -2906,6 +3073,12 @@
               
               <article class="md-content__inner md-typeset">
                 
+<div id="uiao-download-bar" style="background:#1a237e;color:#fff;padding:8px 16px;display:flex;gap:12px;align-items:center;font-size:14px;border-radius:4px;margin-bottom:16px;">
+  <span style="font-weight:600;">Downloads:</span>
+  <button onclick="window.print()" style="background:#fff;color:#1a237e;border:none;padding:4px 12px;border-radius:3px;cursor:pointer;font-size:13px;">PDF (Print)</button>
+  <a href="https://github.com/WhalerMike/uiao-docs/actions/workflows/document-export.yml" target="_blank" style="background:#fff;color:#1a237e;text-decoration:none;padding:4px 12px;border-radius:3px;font-size:13px;">Word (Export)</a>
+</div>
+
                   
 
 
@@ -3023,6 +3196,25 @@
 
 
                 
+
+
+
+<footer class="uiao-footer">
+  <div class="uiao-footer__meta">
+    <span>
+      Document ID: <strong>N/A</strong>
+      &bull; Status: <strong>DRAFT</strong>
+    </span>
+  </div>
+  <div class="uiao-footer__links">
+    <a href="../../..canon/">Canon Overview</a>
+    <a href="../../..canon/corpus-status-dashboard/">Corpus Status Dashboard</a>
+    <a href="../../..adr/">ADR Index</a>
+    <a href="../../..access/">Access &amp; Downloads</a>
+    <a href="../../..contributing/">Contributor Guide</a>
+  </div>
+</footer>
+
               </article>
             </div>
           

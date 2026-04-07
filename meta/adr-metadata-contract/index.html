@@ -12,31 +12,29 @@
         <meta name="author" content="Michael Stratton">
       
       
-        <link rel="canonical" href="https://whalermike.github.io/uiao-docs/adr/">
+        <link rel="canonical" href="https://whalermike.github.io/uiao-docs/meta/adr-metadata-contract/">
       
       
-        <link rel="prev" href="../appendix/e-governance-plane/e-03-cross-fabric-consistency/">
+        <link rel="prev" href="../../access/">
       
-      
-        <link rel="next" href="adr-000-adr-process/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Architectural Decision Records (ADRs) - UIAO Governance Canon</title>
+        <title>ADR Metadata Contract - UIAO Governance Canon</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/uiao.css">
+      <link rel="stylesheet" href="../../stylesheets/uiao.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#architectural-decision-records-adrs" class="md-skip">
+        <a href="#adr-metadata-contract" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +95,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="UIAO Governance Canon" class="md-header__button md-logo" aria-label="UIAO Governance Canon" data-md-component="logo">
+    <a href="../.." title="UIAO Governance Canon" class="md-header__button md-logo" aria-label="UIAO Governance Canon" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -117,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Architectural Decision Records (ADRs)
+              ADR Metadata Contract
             
           </span>
         </div>
@@ -217,13 +215,13 @@
 <div class="uiao-banner">
   <div class="uiao-banner__left">
     <span class="uiao-banner__label">UIAO Canon</span>
-    <a href="..canon/" class="uiao-banner__link">Start Here</a>
+    <a href="../..canon/" class="uiao-banner__link">Start Here</a>
   </div>
   <div class="uiao-banner__right">
     <span class="uiao-banner__status uiao-banner__status--green">Corpus Healthy</span>
-    <a href="..canon/corpus-status-dashboard/" class="uiao-banner__link">Corpus Status</a>
-    <a href="..adr/" class="uiao-banner__link">ADR Index</a>
-    <a href="..access/" class="uiao-banner__link">Access &amp; Downloads</a>
+    <a href="../..canon/corpus-status-dashboard/" class="uiao-banner__link">Corpus Status</a>
+    <a href="../..adr/" class="uiao-banner__link">ADR Index</a>
+    <a href="../..access/" class="uiao-banner__link">Access &amp; Downloads</a>
   </div>
 </div>
 
@@ -243,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -264,7 +262,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../canon/" class="md-tabs__link">
+        <a href="../../canon/" class="md-tabs__link">
           
   
   
@@ -284,7 +282,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../appendix/a-adapter-plane/" class="md-tabs__link">
+        <a href="../../appendix/a-adapter-plane/" class="md-tabs__link">
           
   
   
@@ -304,7 +302,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../appendix/b-truth-fabric/" class="md-tabs__link">
+        <a href="../../appendix/b-truth-fabric/" class="md-tabs__link">
           
   
   
@@ -324,7 +322,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../appendix/c-drift-fabric/" class="md-tabs__link">
+        <a href="../../appendix/c-drift-fabric/" class="md-tabs__link">
           
   
   
@@ -344,7 +342,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../appendix/d-evidence-fabric/" class="md-tabs__link">
+        <a href="../../appendix/d-evidence-fabric/" class="md-tabs__link">
           
   
   
@@ -364,11 +362,31 @@
     
     
       <li class="md-tabs__item">
-        <a href="../appendix/e-governance-plane/" class="md-tabs__link">
+        <a href="../../appendix/e-governance-plane/" class="md-tabs__link">
           
   
   
   Appendix E - Governance Plane
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../adr/" class="md-tabs__link">
+          
+  
+  
+  Architecture Decision Records
 
         </a>
       </li>
@@ -386,27 +404,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
-          
-  
-  
-  Architecture Decision Records
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../access/" class="md-tabs__link">
+        <a href="../../access/" class="md-tabs__link">
           
   
   
@@ -442,7 +440,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="UIAO Governance Canon" class="md-nav__button md-logo" aria-label="UIAO Governance Canon" data-md-component="logo">
+    <a href="../.." title="UIAO Governance Canon" class="md-nav__button md-logo" aria-label="UIAO Governance Canon" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -472,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -553,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../canon/" class="md-nav__link">
+      <a href="../../canon/" class="md-nav__link">
         
   
   
@@ -581,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../canon/canonical-rules/" class="md-nav__link">
+      <a href="../../canon/canonical-rules/" class="md-nav__link">
         
   
   
@@ -616,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../canon/glossary/" class="md-nav__link">
+      <a href="../../canon/glossary/" class="md-nav__link">
         
   
   
@@ -651,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../canon/migration-plan/" class="md-nav__link">
+      <a href="../../canon/migration-plan/" class="md-nav__link">
         
   
   
@@ -686,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../canon/pdf-layout-spec/" class="md-nav__link">
+      <a href="../../canon/pdf-layout-spec/" class="md-nav__link">
         
   
   
@@ -721,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../canon/corpus-status-dashboard/" class="md-nav__link">
+      <a href="../../canon/corpus-status-dashboard/" class="md-nav__link">
         
   
   
@@ -817,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/a-adapter-plane/" class="md-nav__link">
+      <a href="../../appendix/a-adapter-plane/" class="md-nav__link">
         
   
   
@@ -852,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/a-adapter-plane/a-01-adapter-lifecycle/" class="md-nav__link">
+      <a href="../../appendix/a-adapter-plane/a-01-adapter-lifecycle/" class="md-nav__link">
         
   
   
@@ -887,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/a-adapter-plane/a-02-adapter-sandbox-execution/" class="md-nav__link">
+      <a href="../../appendix/a-adapter-plane/a-02-adapter-sandbox-execution/" class="md-nav__link">
         
   
   
@@ -922,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/a-adapter-plane/a-03-adapter-hot-swap-rollback/" class="md-nav__link">
+      <a href="../../appendix/a-adapter-plane/a-03-adapter-hot-swap-rollback/" class="md-nav__link">
         
   
   
@@ -957,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/a-adapter-plane/a-04-adapter-health-liveness/" class="md-nav__link">
+      <a href="../../appendix/a-adapter-plane/a-04-adapter-health-liveness/" class="md-nav__link">
         
   
   
@@ -1053,7 +1051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/b-truth-fabric/" class="md-nav__link">
+      <a href="../../appendix/b-truth-fabric/" class="md-nav__link">
         
   
   
@@ -1088,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/b-truth-fabric/b-01-canonical-claim-schema/" class="md-nav__link">
+      <a href="../../appendix/b-truth-fabric/b-01-canonical-claim-schema/" class="md-nav__link">
         
   
   
@@ -1123,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/b-truth-fabric/b-02-identity-anchoring/" class="md-nav__link">
+      <a href="../../appendix/b-truth-fabric/b-02-identity-anchoring/" class="md-nav__link">
         
   
   
@@ -1158,7 +1156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/b-truth-fabric/b-03-multi-cloud-identity-matrix/" class="md-nav__link">
+      <a href="../../appendix/b-truth-fabric/b-03-multi-cloud-identity-matrix/" class="md-nav__link">
         
   
   
@@ -1193,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/b-truth-fabric/b-04-control-mapping-governance/" class="md-nav__link">
+      <a href="../../appendix/b-truth-fabric/b-04-control-mapping-governance/" class="md-nav__link">
         
   
   
@@ -1289,7 +1287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/c-drift-fabric/" class="md-nav__link">
+      <a href="../../appendix/c-drift-fabric/" class="md-nav__link">
         
   
   
@@ -1324,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/c-drift-fabric/c-01-drift-detection/" class="md-nav__link">
+      <a href="../../appendix/c-drift-fabric/c-01-drift-detection/" class="md-nav__link">
         
   
   
@@ -1359,7 +1357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/c-drift-fabric/c-02-drift-taxonomy/" class="md-nav__link">
+      <a href="../../appendix/c-drift-fabric/c-02-drift-taxonomy/" class="md-nav__link">
         
   
   
@@ -1394,7 +1392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/c-drift-fabric/c-03-vendor-failure-containment/" class="md-nav__link">
+      <a href="../../appendix/c-drift-fabric/c-03-vendor-failure-containment/" class="md-nav__link">
         
   
   
@@ -1490,7 +1488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/d-evidence-fabric/" class="md-nav__link">
+      <a href="../../appendix/d-evidence-fabric/" class="md-nav__link">
         
   
   
@@ -1525,7 +1523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/d-evidence-fabric/d-01-evidence-determinism/" class="md-nav__link">
+      <a href="../../appendix/d-evidence-fabric/d-01-evidence-determinism/" class="md-nav__link">
         
   
   
@@ -1560,7 +1558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/d-evidence-fabric/d-02-evidence-lifecycle/" class="md-nav__link">
+      <a href="../../appendix/d-evidence-fabric/d-02-evidence-lifecycle/" class="md-nav__link">
         
   
   
@@ -1595,7 +1593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/d-evidence-fabric/d-03-evidence-signing/" class="md-nav__link">
+      <a href="../../appendix/d-evidence-fabric/d-03-evidence-signing/" class="md-nav__link">
         
   
   
@@ -1630,7 +1628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/d-evidence-fabric/d-04-evidence-correlation/" class="md-nav__link">
+      <a href="../../appendix/d-evidence-fabric/d-04-evidence-correlation/" class="md-nav__link">
         
   
   
@@ -1726,7 +1724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/e-governance-plane/" class="md-nav__link">
+      <a href="../../appendix/e-governance-plane/" class="md-nav__link">
         
   
   
@@ -1761,7 +1759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/e-governance-plane/e-01-arb-coordination/" class="md-nav__link">
+      <a href="../../appendix/e-governance-plane/e-01-arb-coordination/" class="md-nav__link">
         
   
   
@@ -1796,7 +1794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/e-governance-plane/e-02-mission-partner-corridors/" class="md-nav__link">
+      <a href="../../appendix/e-governance-plane/e-02-mission-partner-corridors/" class="md-nav__link">
         
   
   
@@ -1831,7 +1829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/e-governance-plane/e-03-cross-fabric-consistency/" class="md-nav__link">
+      <a href="../../appendix/e-governance-plane/e-03-cross-fabric-consistency/" class="md-nav__link">
         
   
   
@@ -1849,6 +1847,935 @@
   
   
     <span class="md-status md-status--DRAFT"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture Decision Records
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture Decision Records
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Decision Records (ADRs)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-000-adr-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-000 ADR Process
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-005-canonical-claim-schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-005 Canonical Claim Schema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-006-evidence-determinism/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-006 Evidence Determinism
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-007-multi-cloud-adapter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-007 Multi-Cloud Adapter Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-008-zero-trust-identity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-008 Zero-Trust Identity Anchoring
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-009-drift-ledger-immutability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-009 Drift Ledger Immutability
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-010-vendor-baseline-versioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-010 Vendor Baseline Versioning
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-011-multi-adapter-correlation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-011 Multi-Adapter Correlation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-012-canonical-drift-taxonomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-012 Canonical Drift Taxonomy
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-013-adapter-failure-isolation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-013 Adapter Failure Isolation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-014-evidence-severity-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-014 Evidence Severity Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-015-adapter-extensibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-015 Adapter Extensibility
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-016-evidence-bundle-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-016 Evidence Bundle Lifecycle
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-017-adapter-sandbox-execution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-017 Adapter Sandbox Execution
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-018-mission-channel-enforcement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-018 Mission Channel Enforcement
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-019-vendor-failure-containment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-019 Vendor Failure Containment
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-020-evidence-correlation-determinism/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-020 Evidence Correlation Determinism
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Proposed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-021-adapter-hot-swap-rollback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-021 Adapter Hot-Swap and Rollback
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-022-evidence-compression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-022 Evidence Compression
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-023-adapter-concurrency/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-023 Adapter Concurrency
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-024-evidence-diffing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-024 Evidence Diffing
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-025-adapter-health-liveness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-025 Adapter Health and Liveness
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-026-evidence-lifecycle-guarantees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-026 Evidence Lifecycle Guarantees
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/adr-027-adapter-retirement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-027 Adapter Retirement
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--ACCEPTED"></span>
   
 
   
@@ -1891,1080 +2818,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architecture Decision Records
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Architecture Decision Records
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architectural Decision Records (ADRs)
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architectural Decision Records (ADRs)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#adr-status-definitions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ADR Status Definitions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adr-000-process-and-lifecycle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ADR-000: Process and Lifecycle
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adrs-by-theme" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ADRs by Theme
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="ADRs by Theme">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adapter-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adapter Model
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#identity-and-truth-fabric" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Identity and Truth Fabric
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#drift-fabric" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Drift Fabric
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#evidence-fabric" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Evidence Fabric
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adr-governance-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ADR Governance Rules
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-000-adr-process/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-000 ADR Process
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-005-canonical-claim-schema/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-005 Canonical Claim Schema
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-006-evidence-determinism/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-006 Evidence Determinism
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-007-multi-cloud-adapter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-007 Multi-Cloud Adapter Model
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-008-zero-trust-identity/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-008 Zero-Trust Identity Anchoring
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-009-drift-ledger-immutability/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-009 Drift Ledger Immutability
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-010-vendor-baseline-versioning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-010 Vendor Baseline Versioning
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-011-multi-adapter-correlation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-011 Multi-Adapter Correlation
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-012-canonical-drift-taxonomy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-012 Canonical Drift Taxonomy
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-013-adapter-failure-isolation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-013 Adapter Failure Isolation
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-014-evidence-severity-model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-014 Evidence Severity Model
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-015-adapter-extensibility/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-015 Adapter Extensibility
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-016-evidence-bundle-lifecycle/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-016 Evidence Bundle Lifecycle
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-017-adapter-sandbox-execution/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-017 Adapter Sandbox Execution
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-018-mission-channel-enforcement/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-018 Mission Channel Enforcement
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-019-vendor-failure-containment/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-019 Vendor Failure Containment
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-020-evidence-correlation-determinism/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-020 Evidence Correlation Determinism
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--Proposed"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-021-adapter-hot-swap-rollback/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-021 Adapter Hot-Swap and Rollback
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-022-evidence-compression/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-022 Evidence Compression
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-023-adapter-concurrency/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-023 Adapter Concurrency
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-024-evidence-diffing/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-024 Evidence Diffing
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-025-adapter-health-liveness/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-025 Adapter Health and Liveness
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-026-evidence-lifecycle-guarantees/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-026 Evidence Lifecycle Guarantees
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr-027-adapter-retirement/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-027 Adapter Retirement
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--ACCEPTED"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
             
   
   
@@ -2982,7 +2839,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3000,7 +2857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../access/" class="md-nav__link">
+      <a href="../../access/" class="md-nav__link">
         
   
   
@@ -3032,10 +2889,44 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../meta/adr-metadata-contract/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR Metadata Contract
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--Current"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -3058,6 +2949,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#required-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required Fields
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-semantics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Field Semantics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See Also
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3096,262 +3051,132 @@
   
 
 
-<h1 id="architectural-decision-records-adrs">Architectural Decision Records (ADRs)<a class="headerlink" href="#architectural-decision-records-adrs" title="Permanent link">&para;</a></h1>
-<p>This index lists all UIAO Architectural Decision Records.
-ADRs document significant architectural decisions -- the context that drove them, the decision made, and the consequences of that decision.</p>
-<p>Per CR-003, accepted ADRs are immutable.</p>
-<h2 id="adr-status-definitions">ADR Status Definitions<a class="headerlink" href="#adr-status-definitions" title="Permanent link">&para;</a></h2>
+<h1 id="adr-metadata-contract">ADR Metadata Contract<a class="headerlink" href="#adr-metadata-contract" title="Permanent link">&para;</a></h1>
+<p>This contract defines the canonical frontmatter schema for all Architecture Decision Records (ADRs) in the UIAO corpus.</p>
+<h2 id="required-fields">Required Fields<a class="headerlink" href="#required-fields" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ADR-012</span><span class="w">                </span><span class="c1"># Unique ADR identifier (ADR-&lt;number&gt;)</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Federated Drift Detection</span>
+<span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Accepted</span><span class="w">           </span><span class="c1"># One of: Proposed, Accepted, Superseded, Deprecated, Replaced</span>
+<span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2026-04-07</span><span class="w">           </span><span class="c1"># ISO date of decision</span>
+<span class="nt">deciders</span><span class="p">:</span><span class="w">                  </span><span class="c1"># People or roles who made the decision</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">architecture-board@example.com</span>
+<span class="nt">consulted</span><span class="p">:</span><span class="w">                 </span><span class="c1"># Optional: stakeholders consulted</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data-governance@example.com</span>
+<span class="nt">tags</span><span class="p">:</span><span class="w">                      </span><span class="c1"># Cross-fabric tags</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">drift</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">evidence</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">governance</span>
+<span class="nt">affects</span><span class="p">:</span><span class="w">                   </span><span class="c1"># UIAO documents impacted by this ADR</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UIAO_C_01</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UIAO_D_02</span>
+<span class="nt">supersedes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ADR-005</span><span class="w">        </span><span class="c1"># Optional: ADR this one supersedes</span>
+<span class="nt">supersededBy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ADR-020</span><span class="w">      </span><span class="c1"># Optional: ADR that supersedes this one</span>
+<span class="nt">uiao</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UIAO_ADR_012</span><span class="w">         </span><span class="c1"># UIAO id for the ADR document itself</span>
+<span class="w">  </span><span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Current</span>
+<span class="w">  </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Governance Board</span>
+<span class="w">  </span><span class="nt">lastUpdated</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2026-04-07</span>
+<span class="w">  </span><span class="nt">commit</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;short-hash&gt;</span>
+<span class="nn">---</span>
+</code></pre></div>
+<h2 id="field-semantics">Field Semantics<a class="headerlink" href="#field-semantics" title="Permanent link">&para;</a></h2>
+<p><strong>id</strong> -- Stable ADR identifier (<code>ADR-&lt;number&gt;</code>).</p>
+<p><strong>title</strong> -- Short, descriptive decision title.</p>
+<p><strong>status</strong> -- One of:</p>
 <table>
 <thead>
 <tr>
-<th>Status</th>
+<th>Value</th>
 <th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>PROPOSED</td>
-<td>Under review, not yet accepted</td>
+<td>Proposed</td>
+<td>Under review, not yet binding</td>
 </tr>
 <tr>
-<td>ACCEPTED</td>
-<td>Approved by Governance Board -- immutable Decision field</td>
+<td>Accepted</td>
+<td>Active and authoritative</td>
 </tr>
 <tr>
-<td>DEPRECATED</td>
-<td>Superseded by a newer ADR but retained for audit trail</td>
+<td>Superseded</td>
+<td>Replaced by another ADR</td>
 </tr>
 <tr>
-<td>SUPERSEDED</td>
-<td>Replaced by a specific ADR (see <code>superseded_by</code> field)</td>
+<td>Deprecated</td>
+<td>Being phased out</td>
+</tr>
+<tr>
+<td>Replaced</td>
+<td>Explicitly replaced by another ADR</td>
 </tr>
 </tbody>
 </table>
-<h2 id="adr-000-process-and-lifecycle">ADR-000: Process and Lifecycle<a class="headerlink" href="#adr-000-process-and-lifecycle" title="Permanent link">&para;</a></h2>
+<p><strong>date</strong> -- Date the decision was made (or proposed). ISO 8601 format (<code>YYYY-MM-DD</code>).</p>
+<p><strong>deciders</strong> -- Roles or groups accountable for the decision.</p>
+<p><strong>consulted</strong> -- Optional list of stakeholders consulted prior to decision.</p>
+<p><strong>tags</strong> -- Used for cross-fabric queries. Canonical values: <code>identity</code>, <code>drift</code>, <code>evidence</code>, <code>adapter</code>, <code>governance</code>.</p>
+<p><strong>affects</strong> -- List of <code>UIAO_&lt;AppendixLetter&gt;_&lt;Number&gt;</code> document IDs impacted by this ADR.</p>
+<p><strong>supersedes / supersededBy</strong> -- Maintain decision lineage across the ADR lifecycle.</p>
+<p><strong>uiao block</strong> -- Aligns ADRs with the general UIAO document metadata contract:</p>
 <table>
 <thead>
 <tr>
-<th>ADR</th>
-<th>Title</th>
-<th>Status</th>
-<th>Date</th>
+<th>Sub-field</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="adr-000-adr-process/">ADR-000</a></td>
-<td>ADR Process and Lifecycle</td>
-<td>ACCEPTED</td>
-<td>2026-04-07</td>
+<td><code>uiao.id</code></td>
+<td>UIAO document ID for the ADR itself (<code>UIAO_ADR_NNN</code>)</td>
+</tr>
+<tr>
+<td><code>uiao.status</code></td>
+<td>Document lifecycle status (<code>Current</code>, <code>Draft</code>, etc.)</td>
+</tr>
+<tr>
+<td><code>uiao.owner</code></td>
+<td>Accountable team or role</td>
+</tr>
+<tr>
+<td><code>uiao.lastUpdated</code></td>
+<td>Last modification date</td>
+</tr>
+<tr>
+<td><code>uiao.commit</code></td>
+<td>Short Git commit hash at time of last update</td>
 </tr>
 </tbody>
 </table>
-<h2 id="adrs-by-theme">ADRs by Theme<a class="headerlink" href="#adrs-by-theme" title="Permanent link">&para;</a></h2>
-<h3 id="adapter-model">Adapter Model<a class="headerlink" href="#adapter-model" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>ADR</th>
-<th>Title</th>
-<th>Status</th>
-<th>Date</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="adr-007-multi-cloud-adapter/">ADR-007</a></td>
-<td>Multi-Cloud Adapter Model</td>
-<td>ACCEPTED</td>
-<td>2026-01-20</td>
-</tr>
-<tr>
-<td><a href="adr-013-adapter-failure-isolation/">ADR-013</a></td>
-<td>Adapter Failure Isolation</td>
-<td>ACCEPTED</td>
-<td>2026-02-03</td>
-</tr>
-<tr>
-<td><a href="adr-015-adapter-extensibility/">ADR-015</a></td>
-<td>Adapter Extensibility</td>
-<td>ACCEPTED</td>
-<td>2026-02-08</td>
-</tr>
-<tr>
-<td><a href="adr-017-adapter-sandbox-execution/">ADR-017</a></td>
-<td>Adapter Sandbox Execution</td>
-<td>ACCEPTED</td>
-<td>2026-02-12</td>
-</tr>
-<tr>
-<td><a href="adr-021-adapter-hot-swap-rollback/">ADR-021</a></td>
-<td>Adapter Hot-Swap and Rollback</td>
-<td>ACCEPTED</td>
-<td>2026-02-22</td>
-</tr>
-<tr>
-<td><a href="adr-023-adapter-concurrency/">ADR-023</a></td>
-<td>Adapter Concurrency</td>
-<td>ACCEPTED</td>
-<td>2026-03-01</td>
-</tr>
-<tr>
-<td><a href="adr-025-adapter-health-liveness/">ADR-025</a></td>
-<td>Adapter Health and Liveness</td>
-<td>ACCEPTED</td>
-<td>2026-03-05</td>
-</tr>
-<tr>
-<td><a href="adr-027-adapter-retirement/">ADR-027</a></td>
-<td>Adapter Retirement</td>
-<td>ACCEPTED</td>
-<td>2026-03-10</td>
-</tr>
-</tbody>
-</table>
-<h3 id="identity-and-truth-fabric">Identity and Truth Fabric<a class="headerlink" href="#identity-and-truth-fabric" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>ADR</th>
-<th>Title</th>
-<th>Status</th>
-<th>Date</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="adr-005-canonical-claim-schema/">ADR-005</a></td>
-<td>Canonical Claim Schema</td>
-<td>ACCEPTED</td>
-<td>2026-01-15</td>
-</tr>
-<tr>
-<td><a href="adr-008-zero-trust-identity/">ADR-008</a></td>
-<td>Zero-Trust Identity Anchoring</td>
-<td>ACCEPTED</td>
-<td>2026-01-22</td>
-</tr>
-<tr>
-<td><a href="adr-010-vendor-baseline-versioning/">ADR-010</a></td>
-<td>Vendor Baseline Versioning</td>
-<td>ACCEPTED</td>
-<td>2026-01-25</td>
-</tr>
-<tr>
-<td><a href="adr-011-multi-adapter-correlation/">ADR-011</a></td>
-<td>Multi-Adapter Correlation</td>
-<td>ACCEPTED</td>
-<td>2026-01-28</td>
-</tr>
-<tr>
-<td><a href="adr-018-mission-channel-enforcement/">ADR-018</a></td>
-<td>Mission Channel Enforcement</td>
-<td>ACCEPTED</td>
-<td>2026-02-15</td>
-</tr>
-</tbody>
-</table>
-<h3 id="drift-fabric">Drift Fabric<a class="headerlink" href="#drift-fabric" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>ADR</th>
-<th>Title</th>
-<th>Status</th>
-<th>Date</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="adr-009-drift-ledger-immutability/">ADR-009</a></td>
-<td>Drift Ledger Immutability</td>
-<td>ACCEPTED</td>
-<td>2026-01-22</td>
-</tr>
-<tr>
-<td><a href="adr-012-canonical-drift-taxonomy/">ADR-012</a></td>
-<td>Canonical Drift Taxonomy</td>
-<td>ACCEPTED</td>
-<td>2026-02-01</td>
-</tr>
-<tr>
-<td><a href="adr-019-vendor-failure-containment/">ADR-019</a></td>
-<td>Vendor Failure Containment</td>
-<td>ACCEPTED</td>
-<td>2026-02-18</td>
-</tr>
-</tbody>
-</table>
-<h3 id="evidence-fabric">Evidence Fabric<a class="headerlink" href="#evidence-fabric" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>ADR</th>
-<th>Title</th>
-<th>Status</th>
-<th>Date</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="adr-006-evidence-determinism/">ADR-006</a></td>
-<td>Evidence Determinism</td>
-<td>ACCEPTED</td>
-<td>2026-01-15</td>
-</tr>
-<tr>
-<td><a href="adr-014-evidence-severity-model/">ADR-014</a></td>
-<td>Evidence Severity Model</td>
-<td>ACCEPTED</td>
-<td>2026-02-05</td>
-</tr>
-<tr>
-<td><a href="adr-016-evidence-bundle-lifecycle/">ADR-016</a></td>
-<td>Evidence Bundle Lifecycle</td>
-<td>ACCEPTED</td>
-<td>2026-02-10</td>
-</tr>
-<tr>
-<td><a href="adr-020-evidence-correlation-determinism/">ADR-020</a></td>
-<td>Evidence Correlation Determinism</td>
-<td>ACCEPTED</td>
-<td>2026-02-20</td>
-</tr>
-<tr>
-<td><a href="adr-022-evidence-compression/">ADR-022</a></td>
-<td>Evidence Compression</td>
-<td>ACCEPTED</td>
-<td>2026-02-25</td>
-</tr>
-<tr>
-<td><a href="adr-024-evidence-diffing/">ADR-024</a></td>
-<td>Evidence Diffing</td>
-<td>ACCEPTED</td>
-<td>2026-03-03</td>
-</tr>
-<tr>
-<td><a href="adr-026-evidence-lifecycle-guarantees/">ADR-026</a></td>
-<td>Evidence Lifecycle Guarantees</td>
-<td>ACCEPTED</td>
-<td>2026-03-08</td>
-</tr>
-</tbody>
-</table>
-<h2 id="adr-governance-rules">ADR Governance Rules<a class="headerlink" href="#adr-governance-rules" title="Permanent link">&para;</a></h2>
-<p>Per CR-003 (ADR Immutability), once an ADR is ACCEPTED:</p>
+<h2 id="validation-rules">Validation Rules<a class="headerlink" href="#validation-rules" title="Permanent link">&para;</a></h2>
+<p>All ADRs must conform to this schema. CI enforces presence and allowed values for:</p>
 <ul>
-<li>The Context, Decision, and Date fields are immutable</li>
-<li>Amendments require a new superseding ADR</li>
-<li>The superseding ADR must include <code>supersedes: ADR-NNN</code></li>
-<li>The superseded ADR must be updated with <code>superseded_by: ADR-MMM</code></li>
+<li><code>id</code> -- required, pattern <code>ADR-[0-9]+</code></li>
+<li><code>title</code> -- required, non-empty string</li>
+<li><code>status</code> -- required, one of the five allowed values above</li>
+<li><code>date</code> -- required, ISO 8601 date</li>
+<li><code>uiao.id</code> -- required, pattern <code>UIAO_ADR_[0-9]+</code></li>
 </ul>
-<p>All ADR changes require Governance Plane approval. See <a href="adr-000-adr-process/">ADR-000</a> for the full process.</p>
+<p>Fields <code>deciders</code>, <code>consulted</code>, <code>tags</code>, <code>affects</code>, <code>supersedes</code>, and <code>supersededBy</code> are optional
+but strongly recommended for traceability.</p>
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../adr/adr-000-adr-process/">ADR Process and Lifecycle</a></li>
+<li><a href="../../adr/">ADR Index</a></li>
+<li><a href="../../canon/corpus-status-dashboard/">Corpus Status Dashboard</a></li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -3365,16 +3190,16 @@ ADRs document significant architectural decisions -- the context that drove them
 <footer class="uiao-footer">
   <div class="uiao-footer__meta">
     <span>
-      Document ID: <strong>N/A</strong>
-      &bull; Status: <strong>Unknown</strong>
+      Document ID: <strong>UIAO_META_ADR_01</strong>
+      &bull; Status: <strong>Current</strong>
     </span>
   </div>
   <div class="uiao-footer__links">
-    <a href="..canon/">Canon Overview</a>
-    <a href="..canon/corpus-status-dashboard/">Corpus Status Dashboard</a>
-    <a href="..adr/">ADR Index</a>
-    <a href="..access/">Access &amp; Downloads</a>
-    <a href="..contributing/">Contributor Guide</a>
+    <a href="../..canon/">Canon Overview</a>
+    <a href="../..canon/corpus-status-dashboard/">Corpus Status Dashboard</a>
+    <a href="../..adr/">ADR Index</a>
+    <a href="../..access/">Access &amp; Downloads</a>
+    <a href="../..contributing/">Contributor Guide</a>
   </div>
 </footer>
 
@@ -3431,10 +3256,10 @@ ADRs document significant architectural decisions -- the context that drove them
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
