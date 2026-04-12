@@ -1,0 +1,13 @@
+{
+  "name": "uiao-docs",
+  "version": "1.0.0",
+  "description": "UIAO Modernization Atlas — documentation governance tooling",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "governance": "node tools/uiao-governance-cli.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
