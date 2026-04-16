@@ -54,7 +54,10 @@ Open: **https://github.com/settings/personal-access-tokens/new**
 |---|---|
 | Contents | Read and write |
 | Pull requests | Read and write |
+| Actions | Read and write |
 | Metadata | Read-only (auto-selected, required) |
+
+> **Note on `Actions: Read and write`.** The dispatcher calls `POST /repos/.../dispatches` which accepts the event with only `Contents: write` and returns 204 — so the dispatcher step reports success. But GitHub silently drops the `repository_dispatch` event and the receiver workflow never fires unless the token ALSO carries `Actions: write`. This was discovered after ODA-15 merged into uiao-core/main on 2026-04-16: the dispatcher fired green but the receiver stayed at "no runs yet". If you ever see that symptom, rotate the PAT and confirm `Actions: Read and write` is selected on `uiao-docs`.
 
 Click **Generate token**. Copy the token value (starts with `github_pat_`). You won't see it again.
 
